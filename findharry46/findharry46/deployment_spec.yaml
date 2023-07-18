@@ -1,0 +1,96 @@
+# Stateless application specification
+# The Deployment creates a single replicated Pod, indicated by the 'replicas' field
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    anthos-migrate.cloud.google.com/type: linux-container
+    app: app-01
+    migrate-for-anthos-optimization: "true"
+    migrate-for-anthos-version: v1.14.0
+  name: app-01
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      anthos-migrate.cloud.google.com/type: linux-container
+      app: app-01
+      migrate-for-anthos-optimization: "true"
+      migrate-for-anthos-version: v1.14.0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        anthos-migrate.cloud.google.com/type: linux-container
+        app: app-01
+        migrate-for-anthos-optimization: "true"
+        migrate-for-anthos-version: v1.14.0
+    spec:
+      containers:
+      - env:
+        - name: HC_V2K_SERVICE_MANAGER
+          value: "true"
+        image: gcr.io/tcb-gcp-aws-45/app-01:4-7-2023--12-16-16
+        imagePullPolicy: IfNotPresent
+        livenessProbe:
+          exec:
+            command:
+            - /gamma
+            - probe
+        name: app-01
+        readinessProbe:
+          exec:
+            command:
+            - /gamma
+            - probe
+        resources: {}
+
+---
+# Headless Service specification -
+# No load-balancing, and a single cluster internal IP, only reachable from within the cluster
+# The Kubernetes endpoints controller will modify the DNS configuration to return records (addresses) that point to the Pods, which are labeled with "app": "app-01"
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    anthos-migrate.cloud.google.com/type: linux-container
+    migrate-for-anthos-optimization: "true"
+    migrate-for-anthos-version: v1.14.0
+  name: app-01
+spec:
+  clusterIP: None
+  selector:
+    app: app-01
+  type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+   creationTimestamp: null
+   name: app-01
+spec:
+   clusterIP: None
+   selector:
+      app: app-01
+   type: ClusterIP
+status:
+   loadBalancer: {}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+   name: talent-management-portal
+spec:
+   selector:
+      app: app-01
+   ports:
+      - protocol: TCP
+        port: 80
+        targetPort: 80
+   type: LoadBalancer

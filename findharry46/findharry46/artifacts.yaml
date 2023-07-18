@@ -1,0 +1,6 @@
+images:
+    - name: gcr.io/tcb-gcp-aws-45/app-01
+      context: ./
+      dockerfile: Dockerfile
+deploy:
+    - ./deployment_spec.yaml

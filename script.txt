@@ -1,0 +1,22 @@
+#! /bin/bash
+apt update
+apt -y install apache2
+cat <<EOF > /var/www/html/index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cloud Bootcamp</title>
+</head>
+
+<body style="background-color:black; color: white; font-family: Arial">
+    <center>  
+
+            <img src="https://storage.googleapis.com/bootcamp-gcp-public/TCB.PNG">
+            <h1> Hi! I'm running on Apache.</h1> 
+            <h1>Congratulations! Google Cloud Compute Engine has been successfully provisioned!</h1> 
+            <hr>
+    </center>    
+</body>
+</html>

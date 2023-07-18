@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tcb-gcp-aws-45",
+  "private_key_id": "104b6791564bb7330768674294aa864d8af73e1f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCW3TS+bfpk2pxR\n6oek5ZGGHOc22qs+e+zK3Ucf7D26Jrz3EAIS8DcDPmE1Hn7R/prh9TH2GiZAlb+H\n3AMWgyMnh+bEGSQ+WKAXcyx+HeZ3gzuj0Gvi4hnK+S7mempNRe5t3bySSBJYHb2b\n1WAxgsQQdGw2qXfTTgAbbZkzgr3Vr/M8x4wWokKwFfRoIwSmX62xkyzJmE8sEPgJ\nhRHBIhzUbxcfZH5hQs4ql23DatYFcZR9j9KzDdzSqnTEs70TqV5NCpMB14vHLqBx\ncOc2xDU+tf2he6KnIXWzGzQNHHpl9lbO3dVsQEHOq9Iuo8dNdreMHoqHz5SiUPPV\nOphdz+6JAgMBAAECggEAI+Jc69jUAM5A9XkgJ5hVa32Pf6w2pEes1Loac1zpd9BE\nDU44+BE8PKDHVW+6AbAaXhnI9v1UUPNtmd66u02Y/IumV8mVJeFFvx4tnJf3HEFS\nW841A0P9l5p6zeabR2MVafueoXrUJjJ4ycrQtSYiBbnzjXL05gV9IAkLMkXsapmw\nde8GwI/Vv2qLEXej+yRwDEkOQsRzGKftWWad+3495xcrFCVQzX7b1Wt0DhpxU4F3\nSme2dVshZvWZcjDXIU5wGhNhB2yqHiWv8dJVaYSdPSWUFkzf595sAVkMHfLHrwDY\n+ypRTI8i/9zD8eR1l02QjndOk6uecHB9Qot+Lrb1GwKBgQDG3BMAhZoEYOhKWT/b\n4olRm/+x61CGuV7puJcd5rPf4/V+Mw/DtpwLfK7mL6FaDxVXvYztT7WiJS6skfH2\nDNJl2KhoWBhfHoK5mak+OsForOAFrmLZPwmns/Fwdvk0MByPdpYUBCYDwbJyjBbk\nE6lG0R0FFcXvfmJAarOtsC0AjwKBgQDCNp+Hm3eZLaW4YNb3a1rgeDDQSseNHL+r\ng4ka0EDXEv5ej6cx5WQ8fNVl4K9O4kEpARfUHmskvn8/qouP3JFEbrW4z2Ac55rt\nfmm+trETw7jECEQQgu4RviVppCoHpyXnoYkZxOoft/WbmT+nS9kedDYc+ZfFRyjZ\nYlHktJB7ZwKBgFnJB7NWnyGW94qKHXEUKVf1jU8xpdwOWjJAq8pOXaya6j6eo2GE\nU5REKVu46asV4FcLOFP1h1a8XwR/qLWlOGHPnsnt7KMVzYQrQuTb9nNiiotGH09j\nTOKxNjPHI+FST7LeoghLjzZnAEEDy1oTHnzg8a9YE1R8xbO7+YBUaR01AoGBAIFe\nL1/+YGlprbUm1KrVGSDjDukAlvJZjxdps/9nb3mUjlpg6GdlPSLJqMCHLV+neO4e\na0gBxy8fsdWv/e0jaKSj9mqXwJcgc+P1S+0c9tGKk14Jf4VcIccx2OwIzXJxld84\njAHdWHMub+1o5KzE6mjN0mn0nHNt1jkPtCtbV87LAoGAGXqTrK8I6u/7OkSBocwE\nyW+TwryeMfJUZt4qW2anQEi4oDsXv71m/O5Eq/o89HPzk8JEqovCP1nvnEvmtVGj\nPs+NzEin0/uHyrPqNxrt/f+ogge/3bcKPLTQuo/FNg8xNYVdcMWHWbFzZJT8SwR6\niQDfRyRJaH3Vjjhl3aihnIQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "tcb-m4a-install@tcb-gcp-aws-45.iam.gserviceaccount.com",
+  "client_id": "102832402256512684153",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tcb-m4a-install%40tcb-gcp-aws-45.iam.gserviceaccount.com"
+}
